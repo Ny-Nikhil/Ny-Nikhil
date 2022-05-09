@@ -6,17 +6,17 @@ import random
 from sys import argv
 from typing import Optional
 
-import MikuXProBot.modules.sql.users_sql as sql
+import Ny-Nikhil Bot.modules.sql.users_sql as sql
 
-from MikuXProBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+from Ny-Nikhil Bot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
                           OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
                           SUPPORT_CHAT, dispatcher, StartTime, telethn, updater)
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from MikuXProBot.modules import ALL_MODULES
-from MikuXProBot.modules.helper_funcs.chat_status import is_user_admin
-from MikuXProBot.modules.helper_funcs.misc import paginate_modules
-from MikuXProBot.script import PM_START_TEXT, MIKU_DISPACHER_PIC, PM_PHOTO, MIKU_N_IMG, TEXXT, MIKU_IMG
+from Ny-NikhilBot.modules import ALL_MODULES
+from Ny-NikhilBot.modules.helper_funcs.chat_status import is_user_admin
+from Ny-NikhilBot.modules.helper_funcs.misc import paginate_modules
+from Ny-NikhilBot.script import PM_START_TEXT, Ny-Nikhil_DISPACHER_PIC, PM_PHOTO, Ny-Nikhil_N_IMG, TEXXT, Ny-Nikhil_IMG
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.error import (BadRequest, ChatMigrated, NetworkError,
@@ -57,10 +57,10 @@ buttons = [
     [
                         InlineKeyboardButton(
                              text="🏹 𝙰𝚍𝚍 𝚖𝚎 𝚢𝚘𝚞𝚛 𝚐𝚛𝚘𝚞𝚙",
-                             url="https://t.me/Shukurenaiprobot?startgroup=true"),
+                             url="https://t.me/Gianicbotsupport?startgroup=true"),
                         InlineKeyboardButton(
                              text="🗞️ Repo",
-                             url="https://github.com/Sivatheking/ShukurenaiProbot"),
+                             url="https://github.com/Ny-Nikhil/Ny-Nikhil"),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -99,7 +99,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("MikuXProBot.modules." +
+    imported_module = importlib.import_module("Ny-NikhilBot.modules." +
                                               module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
@@ -313,7 +313,7 @@ def miku_callback_data(update, context):
     query = update.callback_query
     bot = context.bot
     uptime = get_readable_time((time.time() - StartTime))
-    if query.data == "miku_":
+    if query.data == "Miku_":
         query.message.edit_text(
             text=f"""Hello [{update.effective_user.first_name}](tg://user?id={update.effective_user.id}) I'm {context.bot.first_name}, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
@@ -329,20 +329,20 @@ def miku_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🌏 My Master", url="t.me/Sivatheboss"),
+                    InlineKeyboardButton(text="🌏 My Master", url="t.me/Nikhil_LoGo_MaKer"),
                     InlineKeyboardButton(text="✨ Try Inline", switch_inline_query_current_chat="",),
                  ],
                  [
-                    InlineKeyboardButton(text="🕊️ Updates", url="t.me/shubots_updates"),
-                    InlineKeyboardButton(text="🚑 Support", url="t.me/shubots"),
+                    InlineKeyboardButton(text="🕊️ Updates", url="t.me/Gianicbotsupport"),
+                    InlineKeyboardButton(text="🚑 Support", url="t.me/Gianicbotsupport"),
                  ],
                  [
-                    InlineKeyboardButton(text="❌ Back", callback_data="miku_back")
+                    InlineKeyboardButton(text="❌ Back", callback_data="Ny-Nikhil_back")
                  ],
                 ]
             ),
         )
-    elif query.data == "miku_back":
+    elif query.data == "Ny-Nikhil_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
                 PM_START_TEXT.format(
@@ -368,7 +368,7 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_photo(
-            random.choice(MIKU_N_IMG), caption= f"Oh Darling, Click the Button Below to get help of {module.capitalize()}",
+            random.choice(Ny-Nikhil_N_IMG), caption= f"Oh Darling, Click the Button Below to get help of {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton(
                         text="click here",
@@ -378,11 +378,11 @@ def get_help(update: Update, context: CallbackContext):
             return
 
         update.effective_message.reply_photo(
-            random.choice(MIKU_N_IMG), caption= "Click the Button Below to get the list of possible commands.",
+            random.choice(Ny-Nikh_N_IMG), caption= "Click the Button Below to get the list of possible commands.",
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Click here", url="https://t.me/ShukurenaiProbot?start=help")
+                  InlineKeyboardButton(text=" Click here", url="https://t.me/Gianicbotsupport?start=help")
                   ]
                 ]
             ),
@@ -399,7 +399,7 @@ def get_help(update: Update, context: CallbackContext):
                 [[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Shubots")]]))
+                                       url="t.me/Gianicbotsuplort")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
@@ -548,7 +548,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 5291415314 and DONATION_LINK:
+        if OWNER_ID != 5033872287 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -598,14 +598,14 @@ def main():
                   [                  
                        InlineKeyboardButton(
                              text="[► Add me◄]",
-                             url="https://t.me/Shukurenaiprobot?startgroup=true")
+                             url="https://t.me/Gianicbotsupport?startgroup=true")
                      ] 
                 ]
             ),
         ) 
         except Unauthorized:
             LOGGER.warning(
-                "Miku can't able to send message to support_chat, go and check!")
+                "Ny-Nikhil can't able to send message to support_chat, go and check!")
         except BadRequest as e:
             LOGGER.warning(e.message)
 
@@ -620,7 +620,7 @@ def main():
     settings_callback_handler = CallbackQueryHandler(
         settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(miku_callback_data, pattern=r"miku_")
+    about_callback_handler = CallbackQueryHandler(miku_callback_data, pattern=r"Ny-Nikhil_")
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate,
                                      migrate_chats)
