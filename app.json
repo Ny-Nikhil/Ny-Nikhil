@@ -1,7 +1,7 @@
 {
       "name": "shu kurenai",
       "description": "An Anime themed Telegram group management bot.",
-      "logo": "https://telegra.ph/file/bc219808c6d888fc72260.jpg",
+      "logo": "https://te.legra.ph/file/82d85673ef6c8c8d4a4eb.jpg",
       "keywords": [
          "telegram",
          "anime",
@@ -9,7 +9,7 @@
          "manager",
          "Shu"
       ],   
-   "repository": "https://github.com/Sivatheking/ShukurenaiPRobot/tree/Shukurenai-1",
+   "repository": "https://github.com/Ny-Nikhil/Ny-Nikhil/tree/Ny-Nikhil",
    "addons": [
       {
          "options": {
@@ -27,12 +27,12 @@
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "8441685"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "4696142945515762373678b4e5226698"
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -42,26 +42,26 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "5184629840"
+         "value": "5033872287"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "shu_kurenaai"
+         "value": "Nikhil_LoGo_MaKer"
       },
       "SUPPORT_CHAT": {
-         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to miku support than consider you made an enemy.",
+         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Ny-Nikhil support than consider you made an enemy.",
          "required": true,
-         "value": "shubots"
+         "value": "Gianic bot support "
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-123456798"
+         "value": "-1001534970564"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-123456798"
+         "value": "-1001534970564"
       },
       "ARQ_API_KEY": {
          "description": "For Some Modules. Get it from @ArqRobot",
@@ -86,7 +86,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother shu support then keep the current ID's here at they are and add yours send your id.",
          "required": true,
-         "value": "5184629840"
+         "value": "5033872287"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -100,22 +100,22 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users your id .",
          "required": true,
-         "value": "5184629840"
+         "value": "5033872287"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "52"
+         "value": "5033872287"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users your id.",
          "required": true,
-         "value": "5184629840"
+         "value": "5033872287"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot and enter your id.",
          "required": true,
-         "value": "5184629840"
+         "value": "5033872287"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
