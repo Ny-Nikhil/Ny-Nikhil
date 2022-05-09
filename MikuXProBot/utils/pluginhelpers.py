@@ -13,9 +13,9 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
-from MikuXProBot import OWNER_ID, SUPPORT_CHAT
-from MikuXProBot.utils.errors import split_limits
-from MikuXProBot import pgram
+from Ny-Nikhil Bot import OWNER_ID, SUPPORT_CHAT
+from Ny-Nikhil Bot.utils.errors import split_limits
+from Ny-Nikhil Bot import pgram
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
