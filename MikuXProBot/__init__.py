@@ -13,7 +13,7 @@ from telethon.sessions import StringSession
 from telethon import TelegramClient
 from aiohttp import ClientSession
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
-from MikuXProBot.script import PM_START_TEXT
+from Ny-Nikhil bot.script import PM_START_TEXT
 
 StartTime = time.time()
 
@@ -24,7 +24,7 @@ logging.basicConfig(
               logging.StreamHandler()],
     level=logging.INFO)
 
-LOGGER = logging.getLogger("[MikuXProbot]")
+LOGGER = logging.getLogger("[Ny-Nikhilbot]")
 
 log = logging.getLogger('[Your Bot Is Building]')
 
@@ -126,7 +126,7 @@ if ENV:
             "Your blacklisted chats list does not contain valid integers.")
     
 else:
-    from MikuXProBot.config import Development as Config
+    from Ny-Nikhil bot.config import Development as Config
     TOKEN = Config.TOKEN
 
     try:
@@ -256,8 +256,8 @@ BOT_USERNAME = bottie.username
 BOT_NAME = bottie.first_name
 BOT_MENTION = bottie.mention
 
-if "@Shukurenaiprobot" not in PM_START_TEXT:
-    LOGGER.critical(f"{OWNER_ID} Is Cheating. Add `Thanks To @Shukurenaiprobot For Repo` In PM_START_TEXT To Fix This")
+if "@Ny-Nikhilbot" not in PM_START_TEXT:
+    LOGGER.critical(f"{OWNER_ID} Is Cheating. Add `Thanks To @Ny-Nikhilbot For Repo` In PM_START_TEXT To Fix This")
     sys.exit(1)
 else:
     LOGGER.info("Your Bot Is Ready")
