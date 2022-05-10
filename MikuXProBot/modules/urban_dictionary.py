@@ -1,6 +1,6 @@
 import requests
-from MikuXProBot import dispatcher
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
+from Ny-NikhilBot import dispatcher
+from Ny-NikhilBot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
