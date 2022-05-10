@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from MikuXProBot import SUPPORT_CHAT, WALL_API, dispatcher
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
+from Ny-NikhilBot import SUPPORT_CHAT, WALL_API, dispatcher
+from Ny-NikhiloBot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
