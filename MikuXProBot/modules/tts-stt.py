@@ -7,8 +7,8 @@ import requests
 from gtts import gTTS, gTTSError
 from telethon.tl import functions, types
 
-from MikuXProBot.events import register
-from MikuXProBot import telethn as tbot
+from Ny-NikhilBot.events import register
+from Ny-NikhilBot import telethn as tbot
 
 IBM_WATSON_CRED_PASSWORD = ""
 IBM_WATSON_CRED_URL = ""
