@@ -214,10 +214,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url=f"https://t.me/shubots"),
+                             url=f"https://t.me/Gianicbotsupport"),
                        InlineKeyboardButton(
                              text="🛰️ Updates",
-                             url="https://t.me/shubots_Updates")
+                             url="https://t.me/Gianicbotsupport")
                      ] 
                 ]
             ),
