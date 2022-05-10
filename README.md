@@ -1,5 +1,5 @@
-![Miku](https://telegra.ph/file/6513527f063c4f00a6806.jpg)
-# ShukurenaiPRobot
+![Ny-Nikhil](https://te.legra.ph/file/83f50733c89f2c7b8c4e1.jpg)
+# Ny-Nikhil Bot
 
 <h3 align="center"> 
     A Modular Telegram Python Bot Running On Python3 With Mongo DB, Sqlalchemy, Redis Database.
@@ -9,7 +9,7 @@
     <a href="https://python.org">
         <img src="http://forthebadge.com/images/badges/made-with-python.svg" alt="made-with-python">
     </a>
-<a href="https://GitHub.com/Sivatheking">
+<a href="https://GitHub.com/Ny-Nikhil">
         <img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="built-with-love">
     </a>
 <img src="https://img.shields.io/badge/python-3.10.1-green?style=for-the-badge&logo=appveyor" alt="Python Version">
@@ -28,20 +28,19 @@
 + [x] Heroku Deploy
 + [x] Docker/Local Machine
 
-╘══「 Can be found on telegram as [Miku Nakano](https://t.me/Mikuxprobot) 」
+╘══「 Can be found on telegram as [Ny-Nikhil](https://t.me/Gianicbotsupport) 」
 
-![Shu](https://telegra.ph/file/6513527f063c4f00a6806.jpg)
+![Ny-Nikhil](https://te.legra.ph/file/83f50733c89f2c7b8c4e1.jpg)
 
 ### ╒═══「 Creator Info/Credits 」
 
-+  [Sivatheboss old](https://github.com/Sivatheboss88) : OWNER | DEV
-+  [Siva the boss new](https://github.com/Sivatheking) : OWNER | DEV
++  [Ny-Nikhil](https://github.com/Ny-Nikhil) : OWNER | DEV
 
 ╘══「 Any other authorship/credits can be seen through the commits. 」
 
 ### ╒═══「 Support Group 」 
 
-The Support group can be reached out to at [Shu • Support](https://t.me/shubots), where you can ask for help about [ShukurenaiPRobot](https://t.me/shukurenaiprobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Ny-Nikhil • Support](https://t.me/Gianicbotsupport), where you can ask for help about [Ny-Nilhil](https://t.me/Gianicbotsupport), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 <details>
 	<summary>Heroku Deploy</summary>
@@ -52,7 +51,7 @@ The Easiest Way to Deploy This Bot is Via Heroku.
 	
   <h1>
     <p align="center">
-        <a href="https://heroku.com/deploy?template=https://github.com/Sivatheking/ShukurenaiPRobot">
+        <a href="https://heroku.com/deploy?template=https://github.com/Ny-Nikhil/Ny-Nikhil">
             <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to heroku">
         </a>
     </p>
