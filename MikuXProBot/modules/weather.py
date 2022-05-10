@@ -1,4 +1,4 @@
-from MikuXProBot import telethn as tbot
+from Ny-NikhilBot import telethn as tbot
 import io
 import os
 import time
@@ -9,9 +9,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from MikuXProBot import *
+from Ny-NikhilBot import *
 
-from MikuXProBot.events import register
+from Ny-NikhilBot.events import register
 
 
 async def is_register_admin(chat, user):
