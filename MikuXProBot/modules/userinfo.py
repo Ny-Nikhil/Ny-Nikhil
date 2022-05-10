@@ -24,7 +24,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
     
-from MikuXProBot import (
+from Ny-NikhilBot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -37,18 +37,18 @@ from MikuXProBot import (
     StartTime,
     SUPPORT_CHAT
 )
-from MikuXProBot.__main__ import STATS, TOKEN, USER_INFO
-from MikuXProBot.modules.sql import SESSION
-import MikuXProBot.modules.sql.userinfo_sql as sql
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot.modules.sql.global_bans_sql import is_user_gbanned
-from MikuXProBot.modules.sql.afk_sql import is_afk, check_afk_status
-from MikuXProBot.modules.sql.users_sql import get_user_num_chats
-from MikuXProBot.modules.helper_funcs.chat_status import sudo_plus
-from MikuXProBot.modules.helper_funcs.extraction import extract_user
-from MikuXProBot import telethn
+from Ny-NikhilBot.__main__ import STATS, TOKEN, USER_INFO
+from Ny-NikhilBot.modules.sql import SESSION
+import Ny-NikhilBot.modules.sql.userinfo_sql as sql
+from Ny-NikhilBot.modules.disable import DisableAbleCommandHandler
+from Ny-NikhiloBot.modules.sql.global_bans_sql import is_user_gbanned
+from Ny-NikhilBot.modules.sql.afk_sql import is_afk, check_afk_status
+from Ny-NikhilBot.modules.sql.users_sql import get_user_num_chats
+from Ny-NikhilBot.modules.helper_funcs.chat_status import sudo_plus
+from Ny-NikhilBot.modules.helper_funcs.extraction import extract_user
+from Ny-NikhilBot import telethn
 
-MIKU_IMG = "https://telegra.ph/file/e3be4035a03c7ecb6b24e.jpg"
+Ny-Nikhil_IMG = "https://telegra.ph/file/e3be4035a03c7ecb6b24e.jpg"
 
 def no_by_per(totalhp, percentage):
     """
