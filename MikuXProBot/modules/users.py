@@ -12,11 +12,11 @@ from telegram.ext import (
     CommandHandler,
 )
 
-import MikuXProBot.modules.sql.users_sql as sql
-from MikuXProBot.modules.disable import DisableAbleCommandHandler
-from MikuXProBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from MikuXProBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from MikuXProBot.modules.sql.users_sql import get_all_users
+import Ny-NikhilBot.modules.sql.users_sql as sql
+from Ny-NikhilBot.modules.disable import DisableAbleCommandHandler
+from Ny-NikhilBot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from Ny-NikhilBot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from Ny-NikhilBot.modules.sql.users_sql import get_all_users
 
 
 USERS_GROUP = 4
