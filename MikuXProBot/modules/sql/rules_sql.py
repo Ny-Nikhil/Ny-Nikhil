@@ -1,6 +1,6 @@
 import threading
 
-from MikuXProBot.modules.sql import BASE, SESSION
+from Ny-NikhilBot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText, distinct, func
 
 
